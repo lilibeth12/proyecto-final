@@ -29,12 +29,6 @@
   <script src="vistas/dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="vistas/dist/js/demo.js"></script>
-   <!-- DataTables -->
-   <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
-  <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
-
 </head>
 
 
