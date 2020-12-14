@@ -35,28 +35,30 @@
   <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
   <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
 
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 </head>
 
 
 
-<body class="hold-transition sidebar-collapse sidebar-mini">
+<body>
 <!-- Site wrapper -->
-
-
-
 
   <?php 
 
   if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
+    echo '<div class="hold-transition sidebar-collapse sidebar-mini">';
     echo '<div class="wrapper">';
- 
   
-  include"modulos/cabezote.php";
-  include"modulos/menu.php";
+    include"modulos/cabezote.php";
+    include"modulos/menu.php";
 
-   if(isset($_GET["ruta"])){
+    if(isset($_GET["ruta"])){
 
-     if($_GET["ruta"] == "inicio"  ||
+      if($_GET["ruta"] == "inicio"  ||
         $_GET["ruta"] == "usuarios"  ||
         $_GET["ruta"] == "categorias"  ||
         $_GET["ruta"] == "productos"  ||
@@ -66,22 +68,35 @@
         $_GET["ruta"] == "reportes" ||
         $_GET["ruta"] == "salir" ){
 
-      include"modulos/".$_GET["ruta"].".php";
-     }else{
-      include"modulos/404.php";
-     }
-   }else{
-      include"modulos/inicio.php";
-   }
+        include"modulos/".$_GET["ruta"].".php";
 
-  include"modulos/footer.php";
+      }else{
+
+        include"modulos/404.php";
+        
+      }
+
+    }else{
+      include"modulos/inicio.php";
+    }
+
+    include"modulos/footer.php";
+    echo '</div>';
     echo'</div>';
 
   }else{
+    echo '<div class="login">';
     include"modulos/login.php";
+    echo '</div>';
   }
   
   ?>
+
+
+
+
+
+
 
   <!-- /.navbar -->
 
@@ -106,6 +121,6 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
