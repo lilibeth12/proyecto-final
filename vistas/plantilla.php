@@ -35,6 +35,9 @@
   <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
   <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
 
+  <!-- aweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">
 </head>
