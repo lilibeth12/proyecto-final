@@ -24,7 +24,8 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
+        <button class="btn btn-primary" data-toggle="modal" 
+        data-target="#modalAgregarUsuario">
           
           Agregar usuario
 
@@ -32,7 +33,7 @@
 
       </div>
 
-      <div class="box-body">
+      <div class="box-body ">
         
        <table class="table table-bordered table-striped dt-responsive tablas" width="100%">
          
@@ -302,9 +303,7 @@ MODAL AGREGAR USUARIO
 
         </div>
 
-        <!--=====================================
-        CUERPO DEL MODAL
-        ======================================-->
+      <!-- cuerpo del modal -->
 
         <div class="modal-body">
 

@@ -3,10 +3,7 @@ $(".nuevaFoto").change(function(){
 
 	var imagen = this.files[0];
 	
-	/*=============================================
-  	VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
-  	=============================================*/
-
+	// validar datos de la foto
   	if(imagen["type"] != "image/jpeg" && imagen["type"] != "image/png"){
 
   		$(".nuevaFoto").val("");
@@ -146,9 +143,7 @@ $(document).on("click", ".btnActivar", function(){
 
 })
 
-/*=============================================
-REVISAR SI EL USUARIO YA ESTÁ REGISTRADO
-=============================================*/
+// revisar si el usuario esta reguistrado
 
 $("#nuevoUsuario").change(function(){
 
@@ -182,9 +177,7 @@ $("#nuevoUsuario").change(function(){
 	})
 })
 
-/*=============================================
-ELIMINAR USUARIO
-=============================================*/
+// eliminar usuario
 $(document).on("click", ".btnEliminarUsuario", function(){
 
   var idUsuario = $(this).attr("idUsuario");
