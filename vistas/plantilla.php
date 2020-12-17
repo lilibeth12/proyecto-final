@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 
+
+
+
+  
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -16,7 +21,9 @@
   <link rel="stylesheet" href="vistas./dist/css/adminlte.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  
+   <!-- DataTables -->
+  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
   
   
 
@@ -28,14 +35,18 @@
    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"crossorigin="anonymous"></script>
   <!-- AdminLTE App -->
   <script src="vistas/dist/js/adminlte.min.js"></script>
+
   <!-- AdminLTE for demo purposes -->
   <script src="vistas/dist/js/demo.js"></script>
 
+  <!-- DataTables -->
+  <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
+  <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
 
-  
-
-  <!-- aweetalert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- SweetAlert 2 -->
+  <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">

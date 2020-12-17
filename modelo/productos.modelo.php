@@ -4,7 +4,7 @@ require_once "conexion.php";
 
 class ModeloProductos{
 
-	//--------------------------------------- mostrar producto-------------------------------------------
+// mostrar
 
 	static public function mdlMostrarProductos($tabla, $item, $valor){
 
@@ -28,11 +28,10 @@ class ModeloProductos{
 
 		}
 
-	
 
 	}
 
-//-------------------------------------------- registro producto------------------------------------------------------------------------
+	// reguistro producto
 	static public function mdlIngresarProducto($tabla, $datos){
 
 		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(id_categoria, codigo, descripcion, imagen, stock, precio_compra, precio_venta) VALUES (:id_categoria, :codigo, :descripcion, :imagen, :stock, :precio_compra, :precio_venta)");
@@ -59,7 +58,7 @@ class ModeloProductos{
 
 	}
 
-    // ---------------------------------editar producto--------------------------------------------------------
+	// editar
 	static public function mdlEditarProducto($tabla, $datos){
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET id_categoria = :id_categoria, descripcion = :descripcion, imagen = :imagen, stock = :stock, precio_compra = :precio_compra, precio_venta = :precio_venta WHERE codigo = :codigo");
@@ -82,9 +81,10 @@ class ModeloProductos{
 		
 		}
 
+
 	}
 
-	// ----------------------------------------borrar producto-----------------------------------
+// borrar
 
 	static public function mdlEliminarProducto($tabla, $datos){
 
@@ -102,8 +102,32 @@ class ModeloProductos{
 
 		}
 
+
+	}
+
+// actualizar
+
+	static public function mdlActualizarProducto($tabla, $item1, $valor1, $valor){
+
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET $item1 = :$item1 WHERE id = :id");
+
+		$stmt -> bindParam(":".$item1, $valor1, PDO::PARAM_STR);
+		$stmt -> bindParam(":id", $valor, PDO::PARAM_STR);
+
+		if($stmt -> execute()){
+
+			return "ok";
+		
+		}else{
+
+			return "error";	
+
+		}
+
 		
 
 	}
+
+
 
 }
