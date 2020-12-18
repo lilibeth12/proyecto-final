@@ -1,3 +1,18 @@
+/*=============================================
+CARGAR LA TABLA DINÁMICA DE PRODUCTOS
+=============================================*/
+
+// $.ajax({
+
+// 	url: "ajax/datatable-productos.ajax.php",
+// 	success:function(respuesta){
+		
+// 		console.log("respuesta", respuesta);
+
+// 	}
+
+// })
+
 $('.tablaProductos').DataTable( {
     "ajax": "ajax/datatable-productos.ajax.php",
     "deferRender": true,
@@ -32,7 +47,9 @@ $('.tablaProductos').DataTable( {
 
 } );
 
-// captura de categoria
+/*=============================================
+CAPTURANDO LA CATEGORIA PARA ASIGNAR CÓDIGO
+=============================================*/
 $("#nuevaCategoria").change(function(){
 
 	var idCategoria = $(this).val();
@@ -69,7 +86,9 @@ $("#nuevaCategoria").change(function(){
 
 })
 
-// precio
+/*=============================================
+AGREGANDO PRECIO DE VENTA
+=============================================*/
 $("#nuevoPrecioCompra, #editarPrecioCompra").change(function(){
 
 	if($(".porcentaje").prop("checked")){
@@ -89,8 +108,10 @@ $("#nuevoPrecioCompra, #editarPrecioCompra").change(function(){
 	}
 
 })
-// %
 
+/*=============================================
+CAMBIO DE PORCENTAJE
+=============================================*/
 $(".nuevoPorcentaje").change(function(){
 
 	if($(".porcentaje").prop("checked")){
@@ -125,14 +146,17 @@ $(".porcentaje").on("ifChecked",function(){
 
 })
 
-//subiendo foto y luego validar
+/*=============================================
+SUBIENDO LA FOTO DEL PRODUCTO
+=============================================*/
 
 $(".nuevaImagen").change(function(){
 
 	var imagen = this.files[0];
 	
-    
-    
+	/*=============================================
+  	VALIDAMOS EL FORMATO DE LA IMAGEN SEA JPG O PNG
+  	=============================================*/
 
   	if(imagen["type"] != "image/jpeg" && imagen["type"] != "image/png"){
 
@@ -172,7 +196,9 @@ $(".nuevaImagen").change(function(){
   	}
 })
 
-// editar productos
+/*=============================================
+EDITAR PRODUCTO
+=============================================*/
 
 $(".tablaProductos tbody").on("click", "button.btnEditarProducto", function(){
 
@@ -237,8 +263,9 @@ $(".tablaProductos tbody").on("click", "button.btnEditarProducto", function(){
 
 })
 
-
-// eliminar productos
+/*=============================================
+ELIMINAR PRODUCTO
+=============================================*/
 
 $(".tablaProductos tbody").on("click", "button.btnEliminarProducto", function(){
 

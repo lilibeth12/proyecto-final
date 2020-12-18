@@ -1,17 +1,15 @@
 <?php
 
 require_once "../controladores/productos.controlador.php";
-require_once "../modelos/productos.modelo.php";
+require_once "../modelo/productos.modelo.php";
 
 require_once "../controladores/categorias.controlador.php";
-require_once "../modelos/categorias.modelo.php";
+require_once "../modelo/categorias.modelo.php";
 
 
 class TablaProductos{
 
- 	/*=============================================
- 	 MOSTRAR LA TABLA DE PRODUCTOS
-  	=============================================*/ 
+ 	// mostrar la tabla productos
 
 	public function mostrarTablaProductos(){
 
@@ -24,25 +22,18 @@ class TablaProductos{
 		  "data": [';
 
 		  for($i = 0; $i < count($productos); $i++){
-
-		  	/*=============================================
- 	 		TRAEMOS LA IMAGEN
-  			=============================================*/ 
-
+			// foto
+		  
 		  	$imagen = "<img src='".$productos[$i]["imagen"]."' width='40px'>";
 
-		  	/*=============================================
- 	 		TRAEMOS LA CATEGORÍA
-  			=============================================*/ 
+		//   id
 
 		  	$item = "id";
 		  	$valor = $productos[$i]["id_categoria"];
 
 		  	$categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
-		  	/*=============================================
- 	 		STOCK
-  			=============================================*/ 
+		//   stock
 
   			if($productos[$i]["stock"] <= 10){
 
@@ -58,9 +49,7 @@ class TablaProductos{
 
   			}
 
-		  	/*=============================================
- 	 		TRAEMOS LAS ACCIONES
-  			=============================================*/ 
+		//   acciones
 
 		  	$botones =  "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-times'></i></button></div>"; 
 
@@ -93,9 +82,7 @@ class TablaProductos{
 
 }
 
-/*=============================================
-ACTIVAR TABLA DE PRODUCTOS
-=============================================*/ 
+// activar
 $activarProductos = new TablaProductos();
 $activarProductos -> mostrarTablaProductos();
 

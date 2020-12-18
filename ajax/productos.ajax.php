@@ -3,25 +3,28 @@
 require_once "../controladores/productos.controlador.php";
 require_once "../modelo/productos.modelo.php";
 
+require_once "../controladores/categorias.controlador.php";
+require_once "../modelo/categorias.modelo.php";
 
 class AjaxProductos{
 
-//   GENERAR CODIGO APARTIR DE LA CATEGORIA
+  // codigo cat
   public $idCategoria;
 
   public function ajaxCrearCodigoProducto(){
 
-    $item = "id_categoria";
-    $valor = $this->idCategoria;
+  	$item = "id_categoria";
+  	$valor = $this->idCategoria;
 
-    $respuesta = ControladorProductos::ctrMostrarProductos($item, $valor);
+  	$respuesta = ControladorProductos::ctrMostrarProductos($item, $valor);
 
-    echo json_encode($respuesta);
+  	echo json_encode($respuesta);
 
   }
 
 
-// EDITAR PRODUCTO
+  // editar producto
+
   public $idProducto;
 
   public function ajaxEditarProducto(){
@@ -38,16 +41,18 @@ class AjaxProductos{
 }
 
 
-// generar codigo a partir de Id DE LA CATEGORIA
-
+// generar cod apartir de la cat
 if(isset($_POST["idCategoria"])){
 
-  $codigoProducto = new AjaxProductos();
-  $codigoProducto -> idCategoria = $_POST["idCategoria"];
-  $codigoProducto -> ajaxCrearCodigoProducto();
+	$codigoProducto = new AjaxProductos();
+	$codigoProducto -> idCategoria = $_POST["idCategoria"];
+	$codigoProducto -> ajaxCrearCodigoProducto();
 
 }
-// editar-----------------------------------------------
+
+
+// editar producto
+
 if(isset($_POST["idProducto"])){
 
   $editarProducto = new AjaxProductos();
