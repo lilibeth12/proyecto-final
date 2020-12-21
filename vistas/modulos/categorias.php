@@ -73,6 +73,7 @@
 
                         <button class="btn btn-danger btnEliminarCategoria" idCategoria="'.$value["id"].'"><i class="fa fa-times"></i></button>
 
+                        
                       </div>  
 
                     </td>
@@ -94,9 +95,7 @@
 
 </div>
 
-<!--=====================================
-MODAL AGREGAR CATEGORÍA
-======================================-->
+<!-- agregar categoria -->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
   

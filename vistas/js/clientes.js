@@ -1,6 +1,5 @@
-/*=============================================
-EDITAR CLIENTE
-=============================================*/
+// editar clientes
+
 $(".tablas").on("click", ".btnEditarCliente", function(){
 
 	var idCliente = $(this).attr("idCliente");

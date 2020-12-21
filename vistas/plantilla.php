@@ -11,7 +11,13 @@
 
 
 
-  
+  <!-- AdminLTE  -->
+  <link rel="stylesheet" href="vistas/dist/css/adminlte.min.css">
+
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="vistas/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="vistas/bower_components/Ionicons/css/ionicons.min.css">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -20,19 +26,28 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="vistas./dist/css/adminlte.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- AdminLTE Skins -->
+  <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css">
 
    <!-- DataTables -->
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
   
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="vistas/plugins/iCheck/all.css">
   
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="vistas/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+
 
   <!-- jQuery -->
   <script src="vistas/plugins/jquery/jquery.min.js"></script>
+
   <!-- Bootstrap 4 -->
   <script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"crossorigin="anonymous"></script>
+
   <!-- AdminLTE App -->
   <script src="vistas/dist/js/adminlte.min.js"></script>
 
@@ -47,6 +62,10 @@
 
   <!-- SweetAlert 2 -->
   <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
+
+  
+  <!-- iCheck 1.0.1 -->
+  <script src="vistas/plugins/iCheck/icheck.min.js"></script>
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">
@@ -79,7 +98,7 @@
         $_GET["ruta"] == "productos"  ||
         $_GET["ruta"] == "clientes"  ||
         $_GET["ruta"] == "ventas"  ||
-        $_GET["ruta"] == "crear-ventas"  ||
+        $_GET["ruta"] == "crear-venta"  ||
         $_GET["ruta"] == "reportes" ||
         $_GET["ruta"] == "salir" ){
 
@@ -117,7 +136,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="vistas/js/plantilla.js"></script>
-<script src="vistas/js/usuarios.js"></script>
+  <script src="vistas/js/usuarios.js"></script>
+  <script src="vistas/js/categorias.js"></script>
+  <script src="vistas/js/productos.js"></script>
+  <script src="vistas/js/clientes.js"></script>
+  <script src="vistas/js/ventas.js"></script>
 
 </body>
 </html>

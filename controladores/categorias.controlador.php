@@ -2,7 +2,7 @@
 
 class ControladorCategorias{
 
-// crear vategoria
+// crear categoria
 
 	static public function ctrCrearCategoria(){
 

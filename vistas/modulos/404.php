@@ -7,7 +7,8 @@
     </section>
     <section class="content">
         <div class="error-page">
-            <h2 class="headline text-primary">404</h2>
+            <h1 class="headline text-primary">404</h1>
+            <!-- <img class="headline text-primary" src="vistas/img/error/404.png" style=" width: 500px;" alt=""> -->
             <div class="error-content">
                 <h3>
                     <i class="fa fa-warning text-primary"></i>

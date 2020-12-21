@@ -1,6 +1,5 @@
-/*=============================================
-CARGAR LA TABLA DINÁMICA DE VENTAS
-=============================================*/
+// tabla dinamica de ventas
+
 
 // $.ajax({
 
@@ -12,6 +11,7 @@ CARGAR LA TABLA DINÁMICA DE VENTAS
 // 	}
 
 // })
+
 
 $('.tablaVentas').DataTable( {
     "ajax": "ajax/datatable-ventas.ajax.php",
@@ -47,9 +47,7 @@ $('.tablaVentas').DataTable( {
 
 } );
 
-/*=============================================
-AGREGANDO PRODUCTOS A LA VENTA DESDE LA TABLA
-=============================================*/
+// agregando producto desde la tabla principal
 
 $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
@@ -77,10 +75,8 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
           	var stock = respuesta["stock"];
           	var precio = respuesta["precio_venta"];
 
-          	/*=============================================
-          	EVITAR AGREGAR PRODUTO CUANDO EL STOCK ESTÁ EN CERO
-          	=============================================*/
-
+		//   evitar agregar producto que no tiene stock
+		
           	if(stock == 0){
 
       			swal({
@@ -159,9 +155,7 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
 });
 
-/*=============================================
-CUANDO CARGUE LA TABLA CADA VEZ QUE NAVEGUE EN ELLA
-=============================================*/
+// cargue la tablas cuando navega
 
 $(".tablaVentas").on("draw.dt", function(){
 
@@ -182,10 +176,8 @@ $(".tablaVentas").on("draw.dt", function(){
 
 })
 
+// quitar productos de la venta y mostrar el boton
 
-/*=============================================
-QUITAR PRODUCTOS DE LA VENTA Y RECUPERAR BOTÓN
-=============================================*/
 
 var idQuitarProducto = [];
 
@@ -197,9 +189,7 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 
 	var idProducto = $(this).attr("idProducto");
 
-	/*=============================================
-	ALMACENAR EN EL LOCALSTORAGE EL ID DEL PRODUCTO A QUITAR
-	=============================================*/
+// almacenar el id del producto quitado
 
 	if(localStorage.getItem("quitarProducto") == null){
 
@@ -244,9 +234,7 @@ $(".formularioVenta").on("click", "button.quitarProducto", function(){
 
 })
 
-/*=============================================
-AGREGANDO PRODUCTOS DESDE EL BOTÓN PARA DISPOSITIVOS
-=============================================*/
+// agregANDO PRODUCTOS PARA EL dispositivo
 
 var numProducto = 0;
 
@@ -351,9 +339,7 @@ $(".btnAgregarProducto").click(function(){
 
 })
 
-/*=============================================
-SELECCIONAR PRODUCTO
-=============================================*/
+// seleccionar producto-------------------------------------------
 
 $(".formularioVenta").on("change", "select.nuevaDescripcionProducto", function(){
 
