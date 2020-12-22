@@ -1,5 +1,5 @@
-<footer class="main-footer">
-    <strong>>Copyright &copy; 2017 </strong>
-todos los derechos reservados.
-
+<footer class="footer">
+    <p>
+        <strong>>Copyright &copy; 2017 </strong>todos los derechos reservados.
+    </p>
 </footer>

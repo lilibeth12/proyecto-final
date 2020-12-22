@@ -1,4 +1,4 @@
-<header class="main-header">
+<header class="header">
  	
 	<!------------------------------------ logo tipo ------------------------------------------>
 	<a href="inicio" class="logo">

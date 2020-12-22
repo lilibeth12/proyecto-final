@@ -1,0 +1,5 @@
+.main-panel {
+    overflow-x: auto;
+    background-color: beige;
+    grid-column-start: 2;
+}
