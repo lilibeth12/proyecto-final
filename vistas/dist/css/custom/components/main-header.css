@@ -1,0 +1,6 @@
+.header {
+    /* background-color: blue; */
+    grid-column: 2;
+    z-index: 1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .21);
+}

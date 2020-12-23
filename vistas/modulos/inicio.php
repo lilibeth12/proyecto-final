@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="main-panel">
     <section class="content-header">
         <h1>
            Tablero
@@ -9,6 +9,87 @@
             <li class="active">Tablero</li>
         </ol>
     </section>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur nihil fuga vel doloribus porro a laboriosam sed ut nostrum. Expedita voluptates nihil quidem! Sapiente excepturi sed animi illo ut!</p>
 
     
 </div>
