@@ -113,7 +113,7 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
 	          '<div class="col-xs-3">'+
 	            
-	             '<input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="1" stock="'+stock+'" nuevoStock="'+Number(stock-1)+'" required>'+
+				 '<input type="number" class="form-control nuevaCantidadProducto" name="nuevaCantidadProducto" min="1" value="1" stock="'+stock+'" nuevoStock="'+Number(stock-1)+'" required>'+
 
 	          '</div>' +
 
@@ -366,7 +366,7 @@ $(".formularioVenta").on("change", "select.nuevaDescripcionProducto", function()
       	dataType:"json",
       	success:function(respuesta){
       	    
-      	     $(nuevaDescripcionProducto).attr("idProducto", respuesta["id"]);
+      	    $(nuevaDescripcionProducto).attr("idProducto", respuesta["id"]);
       	    $(nuevaCantidadProducto).attr("stock", respuesta["stock"]);
       	    $(nuevaCantidadProducto).attr("nuevoStock", Number(respuesta["stock"])-1);
       	    $(nuevoPrecioProducto).val(respuesta["precio_venta"]);
@@ -715,9 +715,7 @@ $('.tablaVentas').on( 'draw.dt', function(){
 
 
 
-/*=============================================
-BORRAR VENTA
-=============================================*/
+/*BORRAR VENTA*/
 $(".tablas").on("click", ".btnEliminarVenta", function(){
 
   var idVenta = $(this).attr("idVenta");
@@ -739,4 +737,11 @@ $(".tablas").on("click", ".btnEliminarVenta", function(){
 
   })
 
+})
+// imprimir factura
+
+$(".tablas").on("click", ".btnImprimirFctura", function(){
+
+	var codigoVenta = $(this).attr("codigoVenta");
+	window.open("extenciones/tcpdf/pdf/pdf.php", "_blank")
 })

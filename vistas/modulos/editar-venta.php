@@ -22,9 +22,7 @@
 
     <div class="row">
 
-      <!--=====================================
-      EL FORMULARIO
-      ======================================-->
+      <!--EL FORMULARIO-->
       
       <div class="col-lg-5 col-xs-12">
         
@@ -60,9 +58,7 @@
 
                 ?>
 
-                <!--=====================================
-                ENTRADA DEL VENDEDOR
-                ======================================-->
+                <!-- ENTRADA DEL VENDEDOR-->
             
                 <div class="form-group">
                 
@@ -78,9 +74,7 @@
 
                 </div> 
 
-                <!--=====================================
-                ENTRADA DEL CÓDIGO
-                ======================================--> 
+                <!-- ENTRADA DEL CÓDIGO--> 
 
                 <div class="form-group">
                   
@@ -94,9 +88,7 @@
                 
                 </div>
 
-                <!--=====================================
-                ENTRADA DEL CLIENTE
-                ======================================--> 
+                <!--ENTRADA DEL CLIENTE--> 
 
                 <div class="form-group">
                   

@@ -6,9 +6,7 @@ require_once "../modelo/productos.modelo.php";
 
 class TablaProductosVentas{
 
- 	/*=============================================
- 	 MOSTRAR LA TABLA DE PRODUCTOS
-  	=============================================*/ 
+ 	/*MOSTRAR LA TABLA DE PRODUCTOS*/ 
 
 	public function mostrarTablaProductosVentas(){
 
@@ -30,9 +28,7 @@ class TablaProductosVentas{
 
 		  for($i = 0; $i < count($productos); $i++){
 
-		  	/*=============================================
- 	 		TRAEMOS LA IMAGEN
-  			=============================================*/ 
+		  	/*TRAEMOS LA IMAGEN*/ 
 
 		  	$imagen = "<img src='".$productos[$i]["imagen"]."' width='40px'>";
 

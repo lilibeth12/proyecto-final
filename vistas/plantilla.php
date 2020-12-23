@@ -65,7 +65,10 @@
 
   
   <!-- iCheck 1.0.1 -->
-  <script src="vistas/plugins/iCheck/icheck.min.js"></script>
+  <script src="vistas/plugins/jqueryNumber/jquerynumber.min.js"></script>
+
+  <!-- jquery number -->
+  
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">

@@ -14,14 +14,22 @@ class TablaProductos{
 	public function mostrarTablaProductos(){
 
 		$item = null;
-    	$valor = null;
+		$valor = null;
+		$orden = "id";
+		$productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);	
 
-  		$productos = ControladorProductos::ctrMostrarProductos($item, $valor);	
-		
-  		$datosJson = '{
-		  "data": [';
+		if(count($productos) == 0){
 
-		  for($i = 0; $i < count($productos); $i++){
+			echo '{"data": []}';
+
+			return;
+		}
+	  
+		$datosJson = '{
+		"data": [';
+
+		for($i = 0; $i < count($productos); $i++){
+
 			// foto
 		  
 		  	$imagen = "<img src='".$productos[$i]["imagen"]."' width='40px'>";
@@ -51,36 +59,47 @@ class TablaProductos{
 
 		//   acciones
 
-		  	$botones =  "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-times'></i></button></div>"; 
+		if(isset($_GET["perfilOculto"]) && $_GET["perfilOculto"] == "Especial"){
 
-		  	$datosJson .='[
-			      "'.($i+1).'",
-			      "'.$imagen.'",
-			      "'.$productos[$i]["codigo"].'",
-			      "'.$productos[$i]["descripcion"].'",
-			      "'.$categorias["categoria"].'",
-			      "'.$stock.'",
-			      "'.$productos[$i]["precio_compra"].'",
-			      "'.$productos[$i]["precio_venta"].'",
-			      "'.$productos[$i]["fecha"].'",
-			      "'.$botones.'"
-			    ],';
+			$botones =  "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button></div>"; 
 
-		  }
+		}else{
 
-		  $datosJson = substr($datosJson, 0, -1);
+			 $botones =  "<div class='btn-group'><button class='btn btn-warning btnEditarProducto' idProducto='".$productos[$i]["id"]."' data-toggle='modal' data-target='#modalEditarProducto'><i class='fa fa-pencil'></i></button><button class='btn btn-danger btnEliminarProducto' idProducto='".$productos[$i]["id"]."' codigo='".$productos[$i]["codigo"]."' imagen='".$productos[$i]["imagen"]."'><i class='fa fa-times'></i></button></div>"; 
 
-		 $datosJson .=   '] 
+		}
 
-		 }';
-		
-		echo $datosJson;
-
+   
+		$datosJson .='[
+			"'.($i+1).'",
+			"'.$imagen.'",
+			"'.$productos[$i]["codigo"].'",
+			"'.$productos[$i]["descripcion"].'",
+			"'.$categorias["categoria"].'",
+			"'.$stock.'",
+			"'.$productos[$i]["precio_compra"].'",
+			"'.$productos[$i]["precio_venta"].'",
+			"'.$productos[$i]["fecha"].'",
+			"'.$botones.'"
+		  ],';
 
 	}
 
+	$datosJson = substr($datosJson, 0, -1);
+
+   $datosJson .=   '] 
+
+   }';
+  
+  echo $datosJson;
+
 
 }
+
+
+
+}
+
 
 // activar
 $activarProductos = new TablaProductos();
