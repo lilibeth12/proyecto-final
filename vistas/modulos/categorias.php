@@ -2,13 +2,13 @@
 
     <section class="content-header">
 
-        <h1>Administrar categorías</h1>
+        <h1> Categorías</h1>
 
         <ol class="breadcrumb">
 
             <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
 
-            <li class="active">Administrar categorías</li>
+            <li class="active" style="padding-left:15px">Categorías</li>
 
         </ol>
 
@@ -20,7 +20,7 @@
 
             <div class="box-header with-border">
 
-                <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategoria">
+                <button class="btn btn-primary agregar" style="margin-bottom:15px"data-toggle="modal" data-target="#modalAgregarCategoria">
 
                     Agregar categoría
 

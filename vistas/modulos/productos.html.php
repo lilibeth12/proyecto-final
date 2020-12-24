@@ -4,15 +4,14 @@
     
     <h1>
       
-      Administrar productos
-    
+    Productos 
     </h1>
 
     <ol class="breadcrumb">
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar productos</li>
+      <li class="active" style="padding-left:15px"> Productos</li>
     
     </ol>
 
@@ -24,7 +23,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
+        <button class="btn btn-primary agregar" style="margin-bottom:15px" data-toggle="modal" data-target="#modalAgregarProducto">
           
           Agregar producto
 
@@ -71,7 +70,7 @@
 
               <div class="btn-group">
                   
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-warning"><i class="fa fa-pen"></i></button>
 
                 <button class="btn btn-danger"><i class="fa fa-times"></i></button>
 

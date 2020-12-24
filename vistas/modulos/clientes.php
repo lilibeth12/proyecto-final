@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar clientes
+     Clientes
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar clientes</li>
+      <li class="active "style="padding-left:15px"> Clientes</li>
     
     </ol>
 
@@ -24,7 +24,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
+        <button class="btn btn-primary agregar" style="margin-bottom:15px" data-toggle="modal" data-target="#modalAgregarCliente">
           
           Agregar cliente
 

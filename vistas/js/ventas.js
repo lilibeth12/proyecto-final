@@ -743,5 +743,5 @@ $(".tablas").on("click", ".btnEliminarVenta", function(){
 $(".tablas").on("click", ".btnImprimirFctura", function(){
 
 	var codigoVenta = $(this).attr("codigoVenta");
-	window.open("extenciones/tcpdf/pdf/factura.php", "_blank");
+	window.open("extenciones/tcpdf/pdf/pdf.php", "_blank");
 })

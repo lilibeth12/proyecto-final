@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar ventas
+      Ventas
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar ventas</li>
+      <li class="active" style="padding-left:15px">Ventas</li>
     
     </ol>
 
@@ -26,7 +26,7 @@
   
         <a href="crear-venta">
 
-          <button class="btn btn-primary">
+          <button class="btn btn-primary agregar" style="margin-bottom:15px">
             
             Agregar venta
 

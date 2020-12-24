@@ -4,7 +4,7 @@
     
     <h1>
       
-      Administrar productos
+    Productos
     
     </h1>
 
@@ -12,7 +12,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar productos</li>
+      <li class="active">Productos</li>
     
     </ol>
 
@@ -24,7 +24,7 @@
 
       <div class="box-header with-border">
   
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
+        <button class="btn btn-primary agregar"style="margin-bottom:15px" data-toggle="modal" data-target="#modalAgregarProducto">
           
           Agregar producto
 

@@ -6,7 +6,8 @@
     display: flex;
     justify-content: stretch;
     background-color: #131417;
-    background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
+    /*background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));*/
+    background-image:linear-gradient( #f18aba, #f084ad);
 }
 
 .header .navbar {

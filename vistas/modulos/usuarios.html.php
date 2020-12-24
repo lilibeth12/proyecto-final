@@ -4,7 +4,7 @@
 
         <h1>
 
-            Administrar usuarios
+            Usuarios
 
         </h1>
 
@@ -12,7 +12,7 @@
 
             <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
 
-            <li class="active">Administrar usuarios</li>
+            <li class="active" style="padding-left:15px">Usuarios</li>
 
         </ol>
 
@@ -24,7 +24,7 @@
 
             <div class="box-header with-border">
 
-                <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
+                <button class="btn btn-primary agregar"  style="margin-bottom:15px"data-toggle="modal" data-target="#modalAgregarUsuario">
 
                     Agregar usuario
 

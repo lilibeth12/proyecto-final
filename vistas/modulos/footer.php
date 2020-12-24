@@ -1,5 +1,5 @@
 <footer class="footer">
     <p>
-        <strong>>Copyright &copy; 2017 </strong>todos los derechos reservados.
+        <strong>>BONITA </strong>
     </p>
 </footer>
