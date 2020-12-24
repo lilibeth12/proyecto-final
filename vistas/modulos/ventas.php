@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="main-panel">
 
   <section class="content-header">
     
@@ -102,10 +102,9 @@
 
                     <div class="btn-group">
                         
-                      <button class="btn btn-info btnImprimirFactura" codigoVenta"'.$value["id"].'">
-                      <i class="fa fa-print"></i></button>
+                      <button class="btn btn-info btnImprimirFctura" codigoVenta"'.$value["id"].'"><i class="fa fa-print"></i></button>
 
-                      <button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pen"></i></button>
 
                       <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-times"></i></button>
 

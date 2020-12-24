@@ -1,4 +1,4 @@
-<div class="login-wrapper">
+<div class="main-panel">
   
   <div class="login-logo">
     <img src="vistas/dist/img/company/logo.svg" alt="bonita-logo">

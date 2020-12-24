@@ -1,4 +1,0 @@
-<?php
-
-requiere_once('');
-?>

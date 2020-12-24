@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="main-panel">
 
   <section class="content-header">
     
