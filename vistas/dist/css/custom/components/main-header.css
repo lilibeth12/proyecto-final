@@ -2,5 +2,23 @@
     /* background-color: blue; */
     grid-column: 2;
     z-index: 1;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .21);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .14);
+    display: flex;
+    justify-content: stretch;
+    background-color: #131417;
+    background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));
+}
+
+.header .navbar {
+    flex-grow: 1;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.header .navbar .navbar-custom-menu {
+    margin-left: auto;
+}
+
+.header .navbar .navbar-custom-menu .user-menu>a {
+    color: white
 }

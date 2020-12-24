@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="sidebar-menu__item-content">
-                    <span>Categoria</span>
+                    <span>Categorias</span>
                 </div>
             </a>
         </div>
@@ -45,7 +45,7 @@
             <a href="productos">
                 <div class="sidebar-menu__item-icon">
                     <div class="wrapper-icon">
-                        <i class="fa fa-product-hund" aria-hidden="true"></i>
+                        <i class="fa fa-tags" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="sidebar-menu__item-content">
@@ -86,37 +86,6 @@
                 </li>
                 <li>
                     <a href="crear-venta">
-                        <span>Crear Ventas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="reportes">
-                        <span>Reporte de Ventas</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="sidebar-menu__item">
-            <div class="sidebar-menu__item-icon">
-                <div class="wrapper-icon">
-                    <i class="fa fa-list-ul" aria-hidden="true"></i>
-                </div>
-            </div>
-            <label class="sidebar-menu__item-content" for="ch-tr-2">
-                <span>Ventas</span>
-                <span class="item-content__icon">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </span>
-            </label>
-            <input type="checkbox" checked="checked" name="" id="ch-tr-2">
-            <ul class="sidebar-menu__submenu">
-                <li>
-                    <a href="ventas">
-                        <span>Administrar Ventas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="crear-ventas">
                         <span>Crear Ventas</span>
                     </a>
                 </li>

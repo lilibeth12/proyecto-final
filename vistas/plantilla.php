@@ -82,7 +82,7 @@ session_start();
   <script src="vistas/bower_components/Chart.js/Chart.js"></script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="vistas./dist/css/custom/css/login.css">
+  <link rel="stylesheet" href="vistas./dist/css/custom/layouts/login.css">
   <link rel="stylesheet" href="vistas./dist/css/custom/layouts/main.css">
 </head>
 
@@ -97,7 +97,7 @@ session_start();
 
 	if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok") {
 		echo '<div class="main">';
-		echo '<div class="main-wrapper">';
+		echo '<div class="main-wrapper close-sidebar">';
 
 		include "modulos/cabezote.php";
 		include "modulos/menu.php";

@@ -1,135 +1,135 @@
 <div class="main-panel">
 
-  <section class="content-header">
-    
-    <h1>
-      
-      Administrar usuarios
-    
-    </h1>
+    <section class="content-header">
 
-    <ol class="breadcrumb">
-      
-      <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
-      <li class="active">Administrar usuarios</li>
-    
-    </ol>
+        <h1>
 
-  </section>
+            Administrar usuarios
 
-  <section class="content">
+        </h1>
 
-    <div class="box">
+        <ol class="breadcrumb">
 
-      <div class="box-header with-border">
-  
-        <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
-          
-          Agregar usuario
+            <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
 
-        </button>
+            <li class="active">Administrar usuarios</li>
 
-      </div>
+        </ol>
 
-      <div class="box-body">
-        
-       <table class="table table-bordered table-striped dt-responsive tablas">
-         
-        <thead>
-         
-         <tr>
-           
-           <th style="width:10px">#</th>
-           <th>Nombre</th>
-           <th>Usuario</th>
-           <th>Foto</th>
-           <th>Perfil</th>
-           <th>Estado</th>
-           <th>Último login</th>
-           <th>Acciones</th>
+    </section>
 
-         </tr> 
+    <section class="content">
 
-        </thead>
+        <div class="box">
 
-        <tbody>
-          
-          <tr>
-            <td>1</td>
-            <td>Usuario Administrador</td>
-            <td>admin</td>
-            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
-            <td>Administrador</td>
-            <td><button class="btn btn-success btn-xs">Activado</button></td>
-            <td>2017-12-11 12:05:32</td>
-            <td>
+            <div class="box-header with-border">
 
-              <div class="btn-group">
-                  
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
 
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                    Agregar usuario
 
-              </div>  
+                </button>
 
-            </td>
+            </div>
 
-          </tr>
+            <div class="box-body">
 
-           <tr>
-            <td>1</td>
-            <td>Usuario Administrador</td>
-            <td>admin</td>
-            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
-            <td>Administrador</td>
-            <td><button class="btn btn-success btn-xs">Activado</button></td>
-            <td>2017-12-11 12:05:32</td>
-            <td>
+                <table class="table table-bordered table-striped dt-responsive tablas">
 
-              <div class="btn-group">
-                  
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                    <thead>
 
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                        <tr>
 
-              </div>  
+                            <th style="width:10px">#</th>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Foto</th>
+                            <th>Perfil</th>
+                            <th>Estado</th>
+                            <th>Último login</th>
+                            <th>Acciones</th>
 
-            </td>
+                        </tr>
 
-          </tr>
+                    </thead>
 
-           <tr>
-            <td>1</td>
-            <td>Usuario Administrador</td>
-            <td>admin</td>
-            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
-            <td>Administrador</td>
-            <td><button class="btn btn-danger btn-xs">Desactivado</button></td>
-            <td>2017-12-11 12:05:32</td>
-            <td>
+                    <tbody>
 
-              <div class="btn-group">
-                  
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+                        <tr>
+                            <td>1</td>
+                            <td>Usuario Administrador</td>
+                            <td>admin</td>
+                            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+                            <td>Administrador</td>
+                            <td><button class="btn btn-success btn-xs">Activado</button></td>
+                            <td>2017-12-11 12:05:32</td>
+                            <td>
 
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                                <div class="btn-group">
 
-              </div>  
+                                    <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
 
-            </td>
+                                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
 
-          </tr>
+                                </div>
 
-        </tbody>
+                            </td>
 
-       </table>
+                        </tr>
 
-      </div>
+                        <tr>
+                            <td>1</td>
+                            <td>Usuario Administrador</td>
+                            <td>admin</td>
+                            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+                            <td>Administrador</td>
+                            <td><button class="btn btn-success btn-xs">Activado</button></td>
+                            <td>2017-12-11 12:05:32</td>
+                            <td>
 
-    </div>
+                                <div class="btn-group">
 
-  </section>
+                                    <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Usuario Administrador</td>
+                            <td>admin</td>
+                            <td><img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+                            <td>Administrador</td>
+                            <td><button class="btn btn-danger btn-xs">Desactivado</button></td>
+                            <td>2017-12-11 12:05:32</td>
+                            <td>
+
+                                <div class="btn-group">
+
+                                    <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </div>
 
@@ -138,133 +138,131 @@ MODAL AGREGAR USUARIO
 ======================================-->
 
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
-  
-  <div class="modal-dialog">
 
-    <div class="modal-content">
+    <div class="modal-dialog">
 
-      <form role="form" method="post" enctype="multipart/form-data">
+        <div class="modal-content">
 
-        <!--=====================================
+            <form role="form" method="post" enctype="multipart/form-data">
+
+                <!--=====================================
         CABEZA DEL MODAL
         ======================================-->
 
-        <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#3c8dbc; color:white">
 
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar usuario</h4>
+                    <h4 class="modal-title">Agregar usuario</h4>
 
-        </div>
+                </div>
 
-        <!--=====================================
+                <!--=====================================
         CUERPO DEL MODAL
         ======================================-->
 
-        <div class="modal-body">
+                <div class="modal-body">
 
-          <div class="box-body">
+                    <div class="box-body">
 
-            <!-- ENTRADA PARA EL NOMBRE -->
-            
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                        <!-- ENTRADA PARA EL NOMBRE -->
 
-                <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar nombre" required>
+                        <div class="form-group">
 
-              </div>
+                            <div class="input-group">
 
-            </div>
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
 
-            <!-- ENTRADA PARA EL USUARIO -->
+                                <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar nombre" required>
 
-             <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-key"></i></span> 
+                            </div>
 
-                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" required>
+                        </div>
 
-              </div>
+                        <!-- ENTRADA PARA EL USUARIO -->
 
-            </div>
+                        <div class="form-group">
 
-            <!-- ENTRADA PARA LA CONTRASEÑA -->
+                            <div class="input-group">
 
-             <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span> 
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
 
-                <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
+                                <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" required>
 
-              </div>
+                            </div>
 
-            </div>
+                        </div>
 
-            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
+                        <!-- ENTRADA PARA LA CONTRASEÑA -->
 
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-users"></i></span> 
+                        <div class="form-group">
 
-                <select class="form-control input-lg" name="nuevoPerfil">
-                  
-                  <option value="">Selecionar perfil</option>
+                            <div class="input-group">
 
-                  <option value="Administrador">Administrador</option>
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
 
-                  <option value="Especial">Especial</option>
+                                <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
 
-                  <option value="Vendedor">Vendedor</option>
+                            </div>
 
-                </select>
+                        </div>
 
-              </div>
+                        <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
 
-            </div>
+                        <div class="form-group">
 
-            <!-- ENTRADA PARA SUBIR FOTO -->
+                            <div class="input-group">
 
-             <div class="form-group">
-              
-              <div class="panel">SUBIR FOTO</div>
+                                <span class="input-group-addon"><i class="fa fa-users"></i></span>
 
-              <input type="file" id="nuevaFoto" name="nuevaFoto">
+                                <select class="form-control input-lg" name="nuevoPerfil">
 
-              <p class="help-block">Peso máximo de la foto 200 MB</p>
+                                    <option value="">Selecionar perfil</option>
 
-              <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="100px">
+                                    <option value="Administrador">Administrador</option>
 
-            </div>
+                                    <option value="Especial">Especial</option>
 
-          </div>
+                                    <option value="Vendedor">Vendedor</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- ENTRADA PARA SUBIR FOTO -->
+
+                        <div class="form-group">
+
+                            <div class="panel">SUBIR FOTO</div>
+
+                            <input type="file" id="nuevaFoto" name="nuevaFoto">
+
+                            <p class="help-block">Peso máximo de la foto 200 MB</p>
+
+                            <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail" width="100px">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+
+                    <button type="submit" class="btn btn-primary">Guardar usuario</button>
+
+                </div>
+
+            </form>
 
         </div>
-
-         
-
-        <div class="modal-footer">
-
-          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
-
-          <button type="submit" class="btn btn-primary">Guardar usuario</button>
-
-        </div>
-
-      </form>
 
     </div>
 
-  </div>
-
 </div>
-
-

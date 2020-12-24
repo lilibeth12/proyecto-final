@@ -22,3 +22,30 @@
 .close-sidebar {
     grid-template-columns: var(--size-sidebar-icon) calc(100vw - var(--size-sidebar-icon));
 }
+
+
+.dataTables_wrapper .row {
+    min-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.dataTables_wrapper .row>* {
+    display: flex;
+    justify-content: start;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    width: 100%;
+}
+
+.dataTables_wrapper div.dataTables_filter label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dataTables_wrapper div.dataTables_filter input[type=search] {
+    flex-grow: 1;
+}
