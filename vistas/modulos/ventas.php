@@ -1,10 +1,25 @@
+<?php
+
+if($_SESSION["perfil"] == "Especial"){
+
+  echo '<script>
+
+    window.location = "inicio";
+
+  </script>';
+
+  return;
+
+}
+
+?>
 <div class="main-panel">
 
   <section class="content-header">
     
     <h1>
       
-     Ventas
+      Administrar ventas
     
     </h1>
 
@@ -12,7 +27,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active"style="padding-left:15px">Ventas</li>
+      <li class="active">Administrar ventas</li>
     
     </ol>
 
@@ -26,13 +41,23 @@
   
         <a href="crear-venta">
 
-          <button class="btn btn-primary agregar"style="margin-bottom:15px">
+          <button class="btn btn-primary">
             
             Agregar venta
 
           </button>
 
         </a>
+
+         <button type="button" class="btn btn-default pull-right" id="daterange-btn">
+           
+            <span>
+              <i class="fa fa-calendar"></i> Rango de fecha
+            </span>
+
+            <i class="fa fa-caret-down"></i>
+
+         </button>
 
       </div>
 
@@ -62,14 +87,22 @@
 
         <?php
 
-          $item = null;
-          $valor = null;
+          if(isset($_GET["fechaInicial"])){
 
-          $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
+            $fechaInicial = $_GET["fechaInicial"];
+            $fechaFinal = $_GET["fechaFinal"];
+
+          }else{
+
+            $fechaInicial = null;
+            $fechaFinal = null;
+
+          }
+
+          $respuesta = ControladorVentas::ctrRangoFechasVentas($fechaInicial, $fechaFinal);
 
           foreach ($respuesta as $key => $value) {
            
-
            echo '<tr>
 
                   <td>'.($key+1).'</td>
@@ -102,13 +135,17 @@
 
                     <div class="btn-group">
                         
-                      <button class="btn btn-info btnImprimirFctura" codigoVenta"'.$value["id"].'"><i class="fa fa-print"></i></button>
+                      <button class="btn btn-info btnImprimirFctura" codigoVenta="'.$value["codigo"].'"><i class="fa fa-print"></i></button>';
 
-                      <button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pen"></i></button>
+                      if($_SESSION["perfil"] == "Administrador"){
 
-                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-times"></i></button>
+                      echo '<button class="btn btn-warning btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pen"></i></button>
 
-                    </div>  
+                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-times"></i></button>';
+
+                    }
+
+                    echo '</div>  
 
                   </td>
 
@@ -136,6 +173,7 @@
   </section>
 
 </div>
+
 
 
 
