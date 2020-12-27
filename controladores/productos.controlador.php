@@ -313,5 +313,16 @@ class ControladorProductos{
 
 
 	}
+		// mostrar suma de ventas
+	
+	static public function ctrMostrarSumaVentas(){
+
+		$tabla = "productos";
+
+		$respuesta = ModeloProductos::mdlMostrarSumaVentas($tabla);
+
+		return $respuesta;
+
+	}
 
 }
