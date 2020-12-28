@@ -2,12 +2,13 @@
     /* background-color: blue; */
     grid-column: 2;
     z-index: 1;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .14);
+    box-shadow: var(--elevation-1);
     display: flex;
     justify-content: stretch;
-    background-color: #131417;
+    /* background-color: #131417; */
     /*background-image: radial-gradient(at 50% 100%, rgba(123, 22, 255, 0.75), rgb(15, 1, 94));*/
-    background-image:linear-gradient( #f18aba, #f084ad);
+    /* background-image:linear-gradient( #f18aba, #f084ad); */
+    background-color: var(--primary);
 }
 
 .header .navbar {

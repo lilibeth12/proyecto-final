@@ -1,0 +1,114 @@
+.summary-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    flex-basis: calc(100% / 4);
+    padding: 7.5px;
+}
+
+.summary-card__wrapper {
+    min-height: 150px;
+    box-shadow: var(--elevation-1);
+    transition: .2s box-shadow ease-in-out;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.summary-card__icon {
+    --size: 150px;
+    flex-basis: var(--size);
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-card__icon-circle,
+.summary-card__icon-circle::before {
+    --size-circle: 64px;
+    min-height: var(--size-circle);
+    min-width: var(--size-circle);
+    border-radius: calc(var(--size-circle) / 2);
+}
+
+.summary-card__icon-circle {
+    font-size: 20px;
+    background-color: var(--primary);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.summary-card__icon-circle::before {
+    /* --size-circle: 48px; */
+    content: '';
+    position: absolute;
+    background-color: var(--primary-dark);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.70);
+    transition: .3s transform ease-in-out;
+}
+
+.summary-card__content {
+    color: #212529;
+    position: relative;
+}
+
+.summary-card__content p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.summary-card__content h3 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 0;
+    transition: .3s margin-bottom ease-in-out;
+}
+
+.summary-card:first-child .summary-card__content h3::before {
+    content: 'S/. ';
+    font-size: 16px;
+    line-height: 0;
+}
+
+.summary-card__content span {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--primary);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    transition: .3s opacity ease-in-out;
+}
+
+.summary-card:hover .summary-card__wrapper {
+    box-shadow: var(--elevation-4);
+}
+
+.summary-card:hover .summary-card__icon-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.summary-card:hover .summary-card__content h3 {
+    margin-bottom: 29px;
+}
+
+.summary-card:hover .summary-card__content span {
+    opacity: 1;
+}

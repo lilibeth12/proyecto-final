@@ -1,102 +1,97 @@
 <div class="main-panel">
-<section class="content-header">
-    
-    <h1>
-Panel de Control</h1>
+    <section class="content-header">
 
-    <ol class="breadcrumb">
-      
-      <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      
-      <li class="active">Tablero</li>
-    
-    </ol>
+        <h1>
+            Panel de Control</h1>
 
-  </section>
+        <ol class="breadcrumb">
 
-  <section class="content">
+            <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
 
-    <div class="row">
-      
-    <?php
+            <li class="active">Tablero</li>
 
-    if($_SESSION["perfil"] =="Administrador"){
+        </ol>
 
-      include "inicio/cajas-superiores.php";
+    </section>
 
-    }
+    <section class="content">
 
-    ?>
+        <div class="summary-cards">
 
-    </div> 
+            <?php
 
-     <div class="row">
-       
-        <div class="col-lg-12">
+            if ($_SESSION["perfil"] == "Administrador") {
 
-          <?php
+                include "inicio/cajas-superiores.php";
+            }
 
-          if($_SESSION["perfil"] =="Administrador"){
-          
-           include "reportes/grafico-ventas.php";
-
-          }
-
-          ?>
+            ?>
 
         </div>
 
-        <div class="col-lg-12">
+        <div class="row">
 
-          <?php
+            <div class="col-lg-12">
 
-          if($_SESSION["perfil"] =="Administrador"){
-          
-           include "reportes/productos-mas-vendidos.php";
+                <?php
 
-         }
+                if ($_SESSION["perfil"] == "Administrador") {
 
-          ?>
+                    include "reportes/grafico-ventas.php";
+                }
 
-        </div>
+                ?>
 
-         <div class="col-lg-12">
+            </div>
 
-          <?php
+            <div class="col-lg-12">
 
-          if($_SESSION["perfil"] =="Administrador"){
-          
-           include "inicio/productos-recientes.php";
+                <?php
 
-         }
+                if ($_SESSION["perfil"] == "Administrador") {
 
-          ?>
+                    include "reportes/productos-mas-vendidos.php";
+                }
 
-        </div>
+                ?>
 
-         <div class="col-lg-12">
-           
-          <?php
+            </div>
 
-          if($_SESSION["perfil"] =="Especial" || $_SESSION["perfil"] =="Vendedor"){
+            <div class="col-lg-12">
 
-             echo '<div class="box box-success">
+                <?php
+
+                if ($_SESSION["perfil"] == "Administrador") {
+
+                    include "inicio/productos-recientes.php";
+                }
+
+                ?>
+
+            </div>
+
+            <div class="col-lg-12">
+
+                <?php
+
+                if ($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor") {
+
+                    echo '<div class="box box-success">
 
              <div class="box-header">
 
-             <h1>Bienvenid@ ' .$_SESSION["nombre"].'</h1>
+             <h1>Bienvenid@ ' . $_SESSION["nombre"] . '</h1>
 
              </div>
 
              </div>';
+                }
 
-          }
+                ?>
 
-          ?>
+            </div>
 
-         </div>
+        </div>
 
-     </div>
-
-  </section>
+    </section>
 </div>
