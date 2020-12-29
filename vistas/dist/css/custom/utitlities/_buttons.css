@@ -1,0 +1,15 @@
+.btn {
+    --size: 38px;
+    max-height: var(--size);
+    border-radius: calc(var(--size) / 2);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary)
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark)
+}
