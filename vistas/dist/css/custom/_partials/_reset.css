@@ -10,3 +10,76 @@ img {
     height: 100%;
     object-fit: contain;
 }
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+.table {
+    border-radius: 10px;
+    box-shadow: var(--elevation-2);
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border: none;
+}
+
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
+    border: none;
+    vertical-align: middle;
+}
+
+.table thead  {
+    white-space: nowrap;
+}
+
+.table tbody {
+    font-size: 13px;
+}
+
+.table thead th {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.btnEditarUsuario,
+.btnEditarProducto {
+    min-width: 42px;
+}
+
+.pagination li {
+    --size: 21px;
+    
+    max-height: var(--size);
+    transition: .2s background-color ease-in-out;
+}
+
+.pagination li:last-child,
+.pagination li:first-child {
+    font-weight: bold;
+}
+
+.pagination li:first-child {
+    margin-right: 10px;
+}
+
+.pagination li:last-child {
+    margin-left: 10px;
+}
+
+.pagination li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: calc(var(--size) / 2);
+}
+
+.pagination li a:hover {
+    background-color: rgba(0, 0, 0, .14);
+}
