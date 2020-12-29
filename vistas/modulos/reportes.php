@@ -38,7 +38,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
     <div class="box">
 
-      <div class="box-header with-border">
+      <div class="box-header  with-border">
 
           <button type="button" class="btn btn-default" id="daterange-btn2">
            
@@ -81,13 +81,15 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
         ?>
            
-           <button class="btn btn-success"  style="margin-top:15px" >Descargar reporte en Excel</button>
+           <button class="btn btn-success offset-md-8"   >Descargar reporte en Excel</button>
 
           </a>
 
         </div>
          
       </div>
+
+
 
       <div class="box-body">
         
@@ -103,7 +105,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
           </div>
 
-           <div class="col-md-6 col-xs-12">
+           <div class=" col-xs-12 col-md-6">
              
             <?php
 
