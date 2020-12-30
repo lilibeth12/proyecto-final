@@ -17,7 +17,7 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 PRODUCTOS MÁS VENDIDOS
 ======================================-->
 
-<div class="box box-default">
+<div class="box box-default border border-info rounded mt-2 mb-3 p-3">
 	
 	<div class="box-header with-border">
   
@@ -29,7 +29,7 @@ PRODUCTOS MÁS VENDIDOS
     
       	<div class="row">
 
-	        <div class="col-md-7">
+	        <div class="col-md-5 align-self-center">
 
 	 			<div class="chart-responsive">
 	            
@@ -39,7 +39,7 @@ PRODUCTOS MÁS VENDIDOS
 
 	        </div>
 
-		    <div class="col-md-5">
+		    <div class="col-md-7">
 		      	
 		  	 	<ul class="chart-legend clearfix">
 
@@ -47,7 +47,7 @@ PRODUCTOS MÁS VENDIDOS
 
 					for($i = 0; $i < 10; $i++){
 
-					echo ' <li><i class="fa fa-circle-o text-'.$colores[$i].'"></i> '.$productos[$i]["descripcion"].'</li>';
+					echo ' <li><i class="fas fa-circle fa-1x text-'.$colores[$i].'"></i> '.$productos[$i]["descripcion"].'</li>';
 
 					}
 
@@ -68,26 +68,27 @@ PRODUCTOS MÁS VENDIDOS
 		<ul class="nav nav-pills nav-stacked">
 			
 			 <?php
-
+echo '<ul class="list-group w-100">';
           	for($i = 0; $i <5; $i++){
-			
-          		echo '<li>
+              
+          		echo '<li class="list-group-item">
 						 
 						 <a>
 
 						 <img src="'.$productos[$i]["imagen"].'" class="img-thumbnail" width="60px" style="margin-right:10px"> 
 						 '.$productos[$i]["descripcion"].'
 
-						 <span class="pull-right text-'.$colores[$i].'">   
+						 <span class="pull-right ml-5 float-right text-right text-'.$colores[$i].'">   
 						 '.ceil($productos[$i]["ventas"]*100/$totalVentas["total"]).'%
 						 </span>
 							
 						 </a>
 
-      				</li>';
+              </li>';
+             
 
 			}
-
+      echo '</ul>';
 			?>
 
 

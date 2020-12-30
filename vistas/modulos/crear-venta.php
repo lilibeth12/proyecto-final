@@ -15,7 +15,18 @@ if($_SESSION["perfil"] == "Especial"){
 ?>
 
 <div class="main-panel">
-
+<style>
+        .crearventa{
+          border-top: 5px #39478E solid;
+        }
+        input.cajatextventa{
+          width: 100px!important;
+          height: auto;
+        }
+        .tablaVentas{
+          width: 100%!important;
+        }
+      </style>
   <section class="content-header">
     
     <h1>
@@ -39,8 +50,9 @@ if($_SESSION["perfil"] == "Especial"){
     <div class="row">
 
       <!-- formulario de ventas -->
-      
-      <div class="col-lg-5 col-xs-12">
+
+
+      <div class="col-lg-5 col-xs-12 p-3 crearventa bg-light rounded-0">
         
         <div class="box box-success">
           
@@ -60,7 +72,7 @@ if($_SESSION["perfil"] == "Especial"){
                 
                   <div class="input-group">
                     
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                    <span class="input-group-addon  align-self-center pr-2"><i class="fa fa-user"></i></span> 
 
                     <input type="text" class="form-control" id="nuevoVendedor" value="<?php echo $_SESSION["nombre"]; ?>" readonly>
 
@@ -76,7 +88,7 @@ if($_SESSION["perfil"] == "Especial"){
                   
                   <div class="input-group">
                     
-                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                    <span class="input-group-addon  align-self-center pr-2"><i class="fa fa-key"></i></span>
 
                     <?php
 
@@ -120,7 +132,7 @@ if($_SESSION["perfil"] == "Especial"){
                   
                   <div class="input-group">
                     
-                    <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                    <span class="input-group-addon  align-self-center pr-2"><i class="fa fa-users"></i></span>
                     
                     <select class="form-control" id="seleccionarCliente" name="seleccionarCliente" required>
 
@@ -143,7 +155,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                     </select>
                     
-                    <span class="input-group-addon"><button type="button" class="btn btn-default hidden-lg" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
+                    <span class="input-group-addon"><button type="button" class="btn btn-primary hidden-lg mr-1 ml-1" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
                   
                   </div>
                 
@@ -170,8 +182,22 @@ if($_SESSION["perfil"] == "Especial"){
                   <!-- ENTRADA IMPUESTOS Y TOTAL -->
                   
                   <div class="col-xs-2 pull-right">
-                    
-                    <table class="table">
+                    <div class="form-inline">
+
+                      <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
+                      <input type="hidden" name="nuevoPrecioNeto" id="nuevoPrecioNeto" required>
+
+                      <div class="form-group mr-5">
+                          <span>IGV:</span>
+                          <input type="number" min="0" max="18" class="form-control cajatextventa ml-2">
+                      </div>
+                      <div class="form-group ">
+                      <span>Total:</span>
+                          <input type="text"  class="form-control cajatextventa ml-2">
+                      </div>
+
+                    </div>
+                    <!--<table class="table">
 
                       <thead>
 
@@ -221,7 +247,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                       </tbody>
 
-                    </table>
+                    </table>-->
 
                   </div>
 
@@ -288,13 +314,13 @@ if($_SESSION["perfil"] == "Especial"){
       
       <!-- LA TABLA DE productos -->
 
-      <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
+      <div class="col-lg-7 hidden-md hidden-sm hidden-xs  pl-3 ">
         
-        <div class="box box-warning">
+        <div class="box box-warning crearventa bg-light">
 
           <div class="box-header with-border"></div>
 
-          <div class="box-body">
+          <div class="box-body pt-2">
             
             <table class="table table-bordered  table-striped dt-responsive tablaVentas">
               
