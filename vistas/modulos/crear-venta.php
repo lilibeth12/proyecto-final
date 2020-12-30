@@ -44,7 +44,9 @@ if($_SESSION["perfil"] == "Especial"){
         
         <div class="box box-success">
           
-          <div class="box-header with-border"></div>
+          <div class="box-header with-border">
+
+          </div>
 
           <form role="form" method="post" class="formularioVenta">
 
@@ -141,7 +143,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                     </select>
                     
-                    <span class="input-group-addon"><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
+                    <span class="input-group-addon"><button type="button" class="btn btn-default hidden-lg" data-toggle="modal" data-target="#modalAgregarCliente" data-dismiss="modal">Agregar cliente</button></span>
                   
                   </div>
                 
@@ -159,7 +161,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                 <!--BOTÓN PARA AGREGAR PRODUCTO-->
 
-                <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button>
+               <!-- <button type="button" class="btn btn-default hidden-lg btnAgregarProducto">Agregar producto</button> -->
 
                 <hr>
 
@@ -167,7 +169,7 @@ if($_SESSION["perfil"] == "Especial"){
 
                   <!-- ENTRADA IMPUESTOS Y TOTAL -->
                   
-                  <div class="col-xs-8 pull-right">
+                  <div class="col-xs-2 pull-right">
                     
                     <table class="table">
 
@@ -264,7 +266,13 @@ if($_SESSION["perfil"] == "Especial"){
 
           </div>
 
-        </form>
+        
+        
+        
+        
+        
+      
+      </form>
 
         <?php
 

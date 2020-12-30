@@ -70,7 +70,7 @@ $bloque1 = <<<EOF
 		<div style="font-size:8.5px; text-align:right; line-height:15px;">
 			
 			<br>
-			RUC: 
+			RUC: 10433267732
 
 			<br>
 			Dirección: Santa Ana y Balta
