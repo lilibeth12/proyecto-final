@@ -1,6 +1,18 @@
 <div class="main-panel">
+<style>
+  .name_prod{
+        background:  #4957B8;
+        color:white;
+        width:10px;
+        font-size: 15px;
+    }
+    .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+</style>
 
-    <section class="content-header">
+    <section class="content-header lineb">
 
         <h1>Usuarios</h1>
 
@@ -34,7 +46,7 @@
 
                     <thead>
 
-                        <tr>
+                        <tr class="name_prod" >
 
                             <th style="width:10px">#</th>
                             <th>Nombre</th>
@@ -130,9 +142,9 @@ MODAL AGREGAR USUARIO
         CABEZA DEL MODAL
         ======================================-->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Agregar usuario</h4>
 
@@ -152,7 +164,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-user"></i></span>
 
                                 <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="Ingresar nombre" required>
 
@@ -166,7 +178,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-key"></i></span>
 
                                 <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="Ingresar usuario" id="nuevoUsuario" required>
 
@@ -180,7 +192,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-lock"></i></span>
 
                                 <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="Ingresar contraseña" required>
 
@@ -194,7 +206,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-users"></i></span>
 
                                 <select class="form-control input-lg" name="nuevoPerfil">
 
@@ -286,9 +298,9 @@ MODAL AGREGAR USUARIO
         CABEZA DEL MODAL
         ======================================-->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Editar usuario</h4>
 
@@ -306,7 +318,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-user"></i></span>
 
                                 <input type="text" class="form-control input-lg" id="editarNombre" name="editarNombre" value="" required>
 
@@ -320,7 +332,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-key"></i></span>
 
                                 <input type="text" class="form-control input-lg" id="editarUsuario" name="editarUsuario" value="" required>
 
@@ -334,7 +346,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-lock"></i></span>
 
                                 <input type="password" class="form-control input-lg" name="editarPassword" placeholder="Escriba la nueva contraseña">
 
@@ -350,7 +362,7 @@ MODAL AGREGAR USUARIO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-users"></i></span>
 
                                 <select class="form-control input-lg" name="editarPerfil">
 

@@ -13,11 +13,9 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 
 ?>
 
-<!--=====================================
-PRODUCTOS MÁS VENDIDOS
-======================================-->
+<!-- productos mas vendidos -->
 
-<div class="box box-default border border-info rounded mt-2 mb-3 p-3">
+<div class="box box-default border border rounded mt-2 mb-3 p-3">
 	
 	<div class="box-header with-border">
   
@@ -69,7 +67,7 @@ PRODUCTOS MÁS VENDIDOS
 			
 			 <?php
 echo '<ul class="list-group w-100">';
-          	for($i = 0; $i <5; $i++){
+          	for($i = 0; $i <6; $i++){
               
           		echo '<li class="list-group-item">
 						 

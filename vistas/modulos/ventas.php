@@ -14,8 +14,17 @@ if($_SESSION["perfil"] == "Especial"){
 
 ?>
 <div class="main-panel">
+  <style>
+     .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+        .space{
+          margin-bottom: 35px;
+        }
+  </style>
 
-  <section class="content-header">
+  <section class="content-header lineb">
     
     <h1>
       
@@ -37,7 +46,7 @@ if($_SESSION["perfil"] == "Especial"){
 
     <div class="box">
 
-      <div class="box-header with-border">
+      <div class="box-header with-border  space">
   
         <a href="crear-venta">
 

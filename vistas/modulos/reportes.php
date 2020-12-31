@@ -14,8 +14,14 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
 ?>
 <div class="main-panel">
+  <style>
+     .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+  </style>
 
-  <section class="content-header">
+  <section class="content-header lineb">
     
     <h1>
       

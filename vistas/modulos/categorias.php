@@ -1,6 +1,24 @@
 <div class="main-panel">
+<style>
+  .name_prod{
+        background:  #4957B8;
+        color:white;
+        width:10px;
+        
+    }
 
-    <section class="content-header">
+    .name_prod> th{
+     font-size: 15px;
+    }
+    .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+   
+</style>
+
+
+    <section class="content-header  lineb">
 
         <h1> Categorías</h1>
 
@@ -34,7 +52,7 @@
 
                     <thead>
 
-                        <tr>
+                        <tr class="name_prod">
 
                             <th style="width:10px">#</th>
                             <th>Categoria</th>
@@ -105,9 +123,9 @@
                 CABEZA DEL MODAL
                 ======================================-->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center" data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Agregar categoría</h4>
 
@@ -127,7 +145,7 @@
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-th"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-th"></i></span>
 
                                 <input type="text" class="form-control input-lg" name="nuevaCategoria" placeholder="Ingresar categoría" required>
 
@@ -178,9 +196,9 @@
 
                 <!----------------------cabezera-------------------------------------- -->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Editar categoría</h4>
 
@@ -198,7 +216,7 @@
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-th"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-th"></i></span>
 
                                 <input type="text" class="form-control input-lg" name="editarCategoria" id="editarCategoria" required>
 

@@ -1,5 +1,6 @@
 <div class="main-panel">
 
+
   <section class="content-header">
     
     <h1>
@@ -38,7 +39,7 @@
          
         <thead>
          
-         <tr>
+         <tr >
            
            <th style="width:10px">#</th>
            <th>Nombre</th>

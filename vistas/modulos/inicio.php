@@ -1,5 +1,16 @@
 <div class="main-panel">
-    <section class="content-header">
+    <style>
+         .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+        .space{
+          margin-bottom: 35px;
+          
+
+        }
+    </style>
+    <section class="content-header lineb">
 
         <h1>
             Panel de Control</h1>
@@ -8,7 +19,7 @@
 
             <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
 
-            <li class="active">Tablero</li>
+            <li class="active " style="padding-left:15px">Tablero</li>
 
         </ol>
 
@@ -16,7 +27,7 @@
 
     <section class="content">
 
-        <div class="summary-cards">
+        <div class="summary-cards space ">
 
             <?php
 
@@ -31,7 +42,7 @@
 
         <div class="row">
 
-            <div class="col-lg-12 col-md-offset-4">
+            <div class="col-lg-12 col-md-offset-4 space" >
 
                 <?php
 
@@ -44,7 +55,7 @@
 
             </div>
 
-            <div class="col-lg-12">
+            <div class="col-lg-6 space">
 
                 <?php
 
@@ -57,7 +68,7 @@
 
             </div>
 
-            <div class="col-lg-12">
+            <div class="col-lg-6 space">
 
                 <?php
 
@@ -70,7 +81,7 @@
 
             </div>
 
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
 
                 <?php
 

@@ -42,7 +42,7 @@ $noRepetirNombres = array_unique($arrayClientes);
 VENDEDORES
 ======================================-->
 
-<div class="box box-primary border border-secondary rounded mt-2 mb-3 p-3">
+<div class="box box-primary border border rounded mt-2 mb-3 p-3">
 	
 	<div class="box-header with-border">
     

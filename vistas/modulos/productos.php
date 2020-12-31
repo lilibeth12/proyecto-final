@@ -1,6 +1,21 @@
-<div class="main-panel">
 
-    <section class="content-header">
+<div class="main-panel">
+<style>
+  td>img{
+        
+        height:40px;
+    }
+    .name_prod{
+        background:  #4957B8;
+        color:white;
+    }
+    .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
+        }
+</style>
+
+    <section class="content-header lineb">
 
         <h1>
 
@@ -38,7 +53,7 @@
 
                     <thead>
 
-                        <tr>
+                        <tr class="name_prod">
 
                             <th style="width:10px">#</th>
                             <th>Imagen</th>
@@ -65,9 +80,9 @@
 
                     foreach ($productos as $key => $value) {
 
-                        echo '<tr>
+                        echo '<tr class="imgp" >
           <td>' . ($key + 1) . '</td>
-          <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail" width="40px"></td>
+          <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail " ></td>
           <td>' . $value["codigo"] . '</td>
           <td>' . $value["descripcion"] . '</td>';
 
@@ -124,9 +139,9 @@ MODAL AGREGAR PRODUCTO
         CABEZA DEL MODAL
         ======================================-->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Agregar producto</h4>
 
@@ -147,7 +162,7 @@ MODAL AGREGAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-th"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-th"></i></span>
 
                                 <select class="form-control input-lg" id="nuevaCategoria" name="nuevaCategoria" required>
 
@@ -179,7 +194,7 @@ MODAL AGREGAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-code"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-code"></i></span>
 
                                 <input type="text" class="form-control input-lg" id="nuevoCodigo" name="nuevoCodigo" placeholder="Ingresar código" readonly required>
 
@@ -193,7 +208,7 @@ MODAL AGREGAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-product-hunt"></i></span>
 
                                 <input type="text" class="form-control input-lg" name="nuevaDescripcion" placeholder="Ingresar descripción" required>
 
@@ -207,7 +222,7 @@ MODAL AGREGAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-check"></i></span>
 
                                 <input type="number" class="form-control input-lg" name="nuevoStock" min="0" placeholder="Stock" required>
 
@@ -223,7 +238,7 @@ MODAL AGREGAR PRODUCTO
 
                                 <div class="input-group">
 
-                                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span>
+                                    <span class="input-group-addon align-self-center pr-2"><i class="fa fa-arrow-up"></i></span>
 
                                     <input type="number" class="form-control input-lg" id="nuevoPrecioCompra" name="nuevoPrecioCompra" step="any" min="0" placeholder="Precio de compra" required>
 
@@ -237,7 +252,7 @@ MODAL AGREGAR PRODUCTO
 
                                 <div class="input-group">
 
-                                    <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
+                                    <span class="input-group-addon align-self-center pr-2"><i class="fa fa-arrow-down"></i></span>
 
                                     <input type="number" class="form-control input-lg" id="nuevoPrecioVenta" name="nuevoPrecioVenta" step="any" min="0" placeholder="Precio de venta" required>
 
@@ -269,7 +284,7 @@ MODAL AGREGAR PRODUCTO
 
                                         <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
 
-                                        <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                                        <span class="input-group-addon align-self-center pr-2"><i class="fa fa-percent"></i></span>
 
                                     </div>
 
@@ -340,9 +355,9 @@ MODAL EDITAR PRODUCTO
         CABEZA DEL MODAL
         ======================================-->
 
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" style="background:#4957B8; color:white">
 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
                     <h4 class="modal-title">Editar producto</h4>
 
@@ -363,7 +378,7 @@ MODAL EDITAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-th"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-th"></i></span>
 
                                 <select class="form-control input-lg" name="editarCategoria" readonly required>
 
@@ -381,7 +396,7 @@ MODAL EDITAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-code"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-code"></i></span>
 
                                 <input type="text" class="form-control input-lg" id="editarCodigo" name="editarCodigo" readonly required>
 
@@ -395,7 +410,7 @@ MODAL EDITAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-product-hunt"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-product-hunt"></i></span>
 
                                 <input type="text" class="form-control input-lg" id="editarDescripcion" name="editarDescripcion" required>
 
@@ -409,7 +424,7 @@ MODAL EDITAR PRODUCTO
 
                             <div class="input-group">
 
-                                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+                                <span class="input-group-addon align-self-center pr-2"><i class="fa fa-check"></i></span>
 
                                 <input type="number" class="form-control input-lg" id="editarStock" name="editarStock" min="0" required>
 
@@ -425,7 +440,7 @@ MODAL EDITAR PRODUCTO
 
                                 <div class="input-group">
 
-                                    <span class="input-group-addon"><i class="fa fa-arrow-up"></i></span>
+                                    <span class="input-group-addon align-self-center pr-2"><i class="fa fa-arrow-up"></i></span>
 
                                     <input type="number" class="form-control input-lg" id="editarPrecioCompra" name="editarPrecioCompra" step="any" min="0" required>
 
@@ -439,7 +454,7 @@ MODAL EDITAR PRODUCTO
 
                                 <div class="input-group">
 
-                                    <span class="input-group-addon"><i class="fa fa-arrow-down"></i></span>
+                                    <span class="input-group-addon align-self-center pr-2"><i class="fa fa-arrow-down"></i></span>
 
                                     <input type="number" class="form-control input-lg" id="editarPrecioVenta" name="editarPrecioVenta" step="any" min="0" readonly required>
 
@@ -471,7 +486,7 @@ MODAL EDITAR PRODUCTO
 
                                         <input type="number" class="form-control input-lg nuevoPorcentaje" min="0" value="40" required>
 
-                                        <span class="input-group-addon"><i class="fa fa-percent"></i></span>
+                                        <span class="input-group-addon align-self-center "><i class="fa fa-percent"></i></span>
 
                                     </div>
 

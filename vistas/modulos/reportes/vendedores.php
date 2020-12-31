@@ -45,7 +45,7 @@ $noRepetirNombres = array_unique($arrayVendedores);
 VENDEDORES
 ======================================-->
 
-<div class="box box-success border border-warning rounded mt-2 mb-3 p-3">
+<div class="box box-success border border rounded mt-2 mb-3 p-3">
 	
 	<div class="box-header with-border">
     
