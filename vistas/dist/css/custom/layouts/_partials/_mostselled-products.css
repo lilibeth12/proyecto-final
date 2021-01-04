@@ -1,0 +1,50 @@
+.mostselled-products {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mostselled-products__item {
+    display: flex;
+}
+
+.mostselled-products__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.mostselled-products__image {
+    margin-right: 20px;
+}
+
+.percentage {
+    flex-grow: 1;
+}
+
+.percentage-description {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage-description span {
+    line-height: 15px;
+}
+
+.percentage-description span:first-child {
+    color: #9499A7;
+}
+
+.percentage-bar {
+    --size: 5px;
+    height: var(--size);
+    border-radius: calc(var(--size) / 2);
+    background-color: #C9C9C9;
+}
+
+.percentage-bar__active {
+    height: 100%;
+    border-radius: calc(var(--size) / 2);
+}

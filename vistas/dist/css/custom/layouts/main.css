@@ -11,6 +11,8 @@
 
 @import url("../components/recent-products.css");
 
+@import url("./_partials/_mostselled-products.css");
+
 @import url("../components/main-footer.css");
 
 .main {
@@ -20,16 +22,51 @@
 }
 
 .main-wrapper {
-    display: grid;
+    /* display: grid;
     grid-template-columns: var(--size-sidebar) calc(100vw - var(--size-sidebar));
-    grid-template-rows: var(--size-header) calc(100vh - (var(--size-header) * 2)) var(--size-header);
+    grid-template-rows: var(--size-header) calc(100vh - (var(--size-header) * 2)) var(--size-header); */
+    
+    display: flex;
+}
+
+.main-menu {
+    flex: 0 0 var(--size-sidebar-icon);
+    max-width: var(--size-sidebar-icon);
+    overflow: initial;
+    position: relative;
+    
+    transition: .2s all ease-in-out;
+    z-index: 2;
+}
+
+.main-layout {
+    flex-grow: 1;
+
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: var(--size-header) auto var(--size-header);
+    z-index: 1;
+    position: relative;
+}
+
+.main-layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+    opacity: .7;
     transition: .2s all ease-in-out;
 }
 
-.close-sidebar {
-    grid-template-columns: var(--size-sidebar-icon) calc(100vw - var(--size-sidebar-icon));
+.close-sidebar .main-layout::before {
+    width: 0;
+    opacity: 0;
 }
-
 
 .dataTables_wrapper .row {
     min-width: 100%;
@@ -61,4 +98,34 @@ div.dataTables_wrapper div.dataTables_filter {
     background-color: var(--primary);
     border-radius: 10px;
     box-shadow: var(--elevation-2);
+}
+
+.product-image {
+    --size: 50px;
+    flex-basis: var(--size);
+    height: var(--size);
+    width: var(--size);
+    max-width: var(--size);
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #C9C9C9;
+    background-color: #dcdcdc;
+}
+
+.product-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image img.product-image__error {
+    --size: 70%;
+    position: absolute;
+    height: var(--size);
+    width: var(--size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }

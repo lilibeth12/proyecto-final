@@ -12,8 +12,7 @@
     </style>
     <section class="content-header lineb">
 
-        <h1>
-            Panel de Control</h1>
+        <h1>Panel de Control</h1>
 
         <ol class="breadcrumb">
 
