@@ -94,6 +94,22 @@ div.dataTables_wrapper div.dataTables_filter {
     flex-grow: 1;
 }
 
+div.dataTables_wrapper div.dataTables_info {
+    font-size: 10px;
+    padding-top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 #line-chart-ventas {
     background-color: var(--primary);
     border-radius: 10px;
