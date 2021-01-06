@@ -124,10 +124,12 @@
                 ======================================-->
 
                 <div class="modal-header" style="background:#4957B8; color:white">
+                    
+                    <h4 class="modal-title">Agregar categoría</h4>
 
                     <button type="button" class="close align-self-center" data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Agregar categoría</h4>
+                    
 
                 </div>
 
@@ -197,10 +199,11 @@
                 <!----------------------cabezera-------------------------------------- -->
 
                 <div class="modal-header" style="background:#4957B8; color:white">
+                    <h4 class="modal-title">Editar categoría</h4>
 
                     <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Editar categoría</h4>
+                    
 
                 </div>
 

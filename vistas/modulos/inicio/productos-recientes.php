@@ -1,3 +1,7 @@
+<style>
+
+</style>
+
 <?php
 
 $item = null;
@@ -15,21 +19,7 @@ $productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);
 
         <h3 class="box-title">Productos agregados recientemente</h3>
 
-        <div class="box-tools pull-right">
-
-            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-
-                <i class="fa fa-minus"></i>
-
-            </button>
-
-            <button type="button" class="btn btn-box-tool" data-widget="remove">
-
-                <i class="fa fa-times"></i>
-
-            </button>
-
-        </div>
+        
 
     </div>
 
@@ -49,13 +39,13 @@ $productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);
 
         </div>
 
-        <div class="product-info">
+        <div class="product-info mt-2  ">
 
-          <a href="" class="product-title">
+          <a href="" class="product-title ">
 
             ' . $productos[$i]["descripcion"] . '
 
-            <span class="btn btn-primary pull-right  ml-5 float-right text-right text-">$' . $productos[$i]["precio_venta"] . '</span>
+            <span class="btn btn-primary pull-right  ml-5 float-right text-right text-">S/.' . $productos[$i]["precio_venta"] . '</span>
 
           </a>
     

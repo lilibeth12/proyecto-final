@@ -73,7 +73,7 @@
                         foreach ($usuarios as $key => $value) {
 
                             echo ' <tr>
-                  <td>1</td>
+                    <td>'.($key+1).'</td>
                   <td>' . $value["nombre"] . '</td>
                   <td>' . $value["usuario"] . '</td>';
 
@@ -143,10 +143,11 @@ MODAL AGREGAR USUARIO
         ======================================-->
 
                 <div class="modal-header" style="background:#4957B8; color:white">
+                    <h4 class="modal-title">Agregar usuario</h4>
 
                     <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Agregar usuario</h4>
+                    
 
                 </div>
 
@@ -299,11 +300,11 @@ MODAL AGREGAR USUARIO
         ======================================-->
 
                 <div class="modal-header" style="background:#4957B8; color:white">
-
+                
+                    <h4 class="modal-title">Editar usuario</h4>
                     <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Editar usuario</h4>
-
+                    
                 </div>
 
                 <!-- cuerpo del modal -->

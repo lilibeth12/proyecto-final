@@ -98,7 +98,7 @@ $noRepetirFechas = array_unique($arrayFechas);
         pointStrokeColors: ['#efefef'],
         gridLineColor: '#efefef',
         gridTextFamily: 'Open Sans',
-        preUnits: '$',
+        preUnits: 'S/.',
         gridTextSize: 10
     });
 </script>

@@ -140,10 +140,11 @@ MODAL AGREGAR PRODUCTO
         ======================================-->
 
                 <div class="modal-header" style="background:#4957B8; color:white">
+                     <h4 class="modal-title">Agregar producto</h4>
 
                     <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Agregar producto</h4>
+                   
 
                 </div>
 
@@ -357,9 +358,11 @@ MODAL EDITAR PRODUCTO
 
                 <div class="modal-header" style="background:#4957B8; color:white">
 
+                    <h4 class="modal-title">Editar producto</h4>
+
                     <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-                    <h4 class="modal-title">Editar producto</h4>
+                    
 
                 </div>
 

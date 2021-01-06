@@ -376,9 +376,11 @@ MODAL AGREGAR CLIENTE
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
+          <h4 class="modal-title">Agregar cliente</h4>
+
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar cliente</h4>
+          
 
         </div>
 

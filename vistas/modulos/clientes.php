@@ -152,9 +152,11 @@ MODAL AGREGAR CLIENTE
 
         <div class="modal-header" style="background:#4957B8; color:white">
 
+          <h4 class="modal-title">Agregar cliente</h4>
+
           <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Agregar cliente</h4>
+          
 
         </div>
 
@@ -298,10 +300,12 @@ MODAL EDITAR CLIENTE
         ======================================-->
 
         <div class="modal-header" style="background:#4957B8; color:white">
+        
+          <h4 class="modal-title">Editar cliente</h4>
 
           <button type="button" class="close align-self-center " data-dismiss="modal">&times;</button>
 
-          <h4 class="modal-title">Editar cliente</h4>
+         
 
         </div>
 

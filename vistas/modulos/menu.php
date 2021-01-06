@@ -70,7 +70,7 @@
             <a href="clientes">
                 <div class="sidebar-menu__item-icon">
                     <div class="wrapper-icon">
-                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="sidebar-menu__item-content">

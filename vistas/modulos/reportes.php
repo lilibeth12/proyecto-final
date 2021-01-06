@@ -117,23 +117,16 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
           </div>
 
-           <div class=" col-xs-12 col-md-6">
-             
-            <?php
+          
 
-            include "reportes/productos-mas-vendidos.php";
-
-            ?>
-
-           </div>
 
             <div class="col-md-6 col-xs-12">
              
-            <?php
+                  <?php
 
-            include "reportes/vendedores.php";
+                  include "reportes/vendedores.php";
 
-            ?>
+                  ?>
 
            </div>
 
@@ -146,6 +139,16 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
             ?>
 
            </div>
+
+           <div class=" col-xs-12">
+             
+             <?php
+ 
+             include "reportes/productos-mas-vendidos.php";
+ 
+             ?>
+ 
+            </div>
           
         </div>
 

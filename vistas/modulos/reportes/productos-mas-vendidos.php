@@ -6,7 +6,7 @@ $orden = "ventas";
 
 $productos = ControladorProductos::ctrMostrarProductos($item, $valor, $orden);
 
-$colores = array("red", "green", "yellow", "aqua", "purple", "blue", "cyan", "magenta", "orange", "gold");
+$colores = array("red", "green", "yellow", "pink", "purple", "blue" , "orange", "gray");
 
 $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 
@@ -43,7 +43,7 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 
                     <?php
 
-                    for ($i = 0; $i < 10; $i++) {
+                    for ($i = 0; $i < 8; $i++) {
 
                         echo ' <li><i class="fas fa-circle fa-1x text-' . $colores[$i] . '"></i> ' . $productos[$i]["descripcion"] . '</li>';
                     }
@@ -110,7 +110,7 @@ $totalVentas = ControladorProductos::ctrMostrarSumaVentas();
 
         <?php
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 8; $i++) {
 
             echo "{
       value    : " . $productos[$i]["ventas"] . ",
