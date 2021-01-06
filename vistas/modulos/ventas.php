@@ -36,7 +36,7 @@ if($_SESSION["perfil"] == "Especial"){
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Administrar ventas</li>
+      <li class="active" style="margin-left:15px">Administrar ventas</li>
     
     </ol>
 

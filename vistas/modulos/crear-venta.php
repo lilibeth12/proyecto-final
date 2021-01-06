@@ -61,6 +61,43 @@ if ($_SESSION["perfil"] == "Especial") {
 
         <div class="row">
 
+
+
+
+          <!-- LA TABLA DE productos -->
+
+          <div class="col-lg-7 hidden-md hidden-sm hidden-xs  ">
+
+<div class="box box-warning crearventa bg-light">
+
+    <div class="box-header with-border"></div>
+
+    <div class="box-body pt-1">
+
+        <table class="table table-bordered  table-striped dt-responsive tablaVentas ">
+
+            <thead class="name_prod">
+
+                <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Imagen</th>
+                    <th>Código</th>
+                    <th>Descripcion</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+
+            </thead>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+</div>
+
             <!-- formulario de ventas -->
 
 
@@ -313,39 +350,7 @@ if ($_SESSION["perfil"] == "Especial") {
 
             </div>
 
-            <!-- LA TABLA DE productos -->
-
-            <div class="col-lg-7 hidden-md hidden-sm hidden-xs  pl-3 ">
-
-                <div class="box box-warning crearventa bg-light">
-
-                    <div class="box-header with-border"></div>
-
-                    <div class="box-body pt-1">
-
-                        <table class="table table-bordered  table-striped dt-responsive tablaVentas ">
-
-                            <thead class="name_prod">
-
-                                <tr>
-                                    <th style="width: 10px">#</th>
-                                    <th>Imagen</th>
-                                    <th>Código</th>
-                                    <th>Descripcion</th>
-                                    <th>Stock</th>
-                                    <th>Acciones</th>
-                                </tr>
-
-                            </thead>
-
-                        </table>
-
-                    </div>
-
-                </div>
-
-
-            </div>
+          
         </div>
 
 
