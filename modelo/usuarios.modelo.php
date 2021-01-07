@@ -1,9 +1,10 @@
 <?php
+
 require_once "conexion.php";
 
 class ModeloUsuarios{
 
-// ----------------------------------------------mostrar usuarios----------------------------------------------------------------------------
+	// mostrar usuario
 
 	static public function mdlMostrarUsuarios($tabla, $item, $valor){
 
@@ -28,15 +29,10 @@ class ModeloUsuarios{
 		}
 		
 
+	
+
 	}
-
-
-
-
-
-
-// --------------------------------------------------registrar usuarios--------------------------------------------------------------------
-
+// reguistar usuario
 
 	static public function mdlIngresarUsuario($tabla, $datos){
 
@@ -58,14 +54,11 @@ class ModeloUsuarios{
 		
 		}
 
+	
 
 	}
 
-
-
-
-
-	// --------------------------------------------------editando usuarios-------------------------------------------------------------------
+// editar usuario-----------------------
 
 	static public function mdlEditarUsuario($tabla, $datos){
 	
@@ -91,8 +84,7 @@ class ModeloUsuarios{
 
 	}
 
-// --------------------------------------actualizar------------------------------------------------------------------------------
-
+	// actualizar usuario----------------------------
 	static public function mdlActualizarUsuario($tabla, $item1, $valor1, $item2, $valor2){
 
 		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET $item1 = :$item1 WHERE $item2 = :$item2");
@@ -110,11 +102,11 @@ class ModeloUsuarios{
 
 		}
 
-		
+	
 
 	}
 
-	// ----------------------------------------------eliminar------------------------------------------------------------------
+	// borrar usuario--------------------------
 
 	static public function mdlBorrarUsuario($tabla, $datos){
 
@@ -133,6 +125,7 @@ class ModeloUsuarios{
 		}
 
 		
+
 
 	}
 

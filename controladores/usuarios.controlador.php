@@ -2,14 +2,13 @@
 
 class ControladorUsuarios{
 
-	// ingreso usuarioo--------------------------------------------------------------------------
+// ingreso del usuario----------------------------------
 
 	static public function ctrIngresoUsuario(){
 
 		if(isset($_POST["ingUsuario"])){
 
-			if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"]) &&
-			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingPassword"])){
+			if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"])){
 
 			   	$encriptar = crypt($_POST["ingPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
@@ -20,9 +19,7 @@ class ControladorUsuarios{
 
 				$respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
 
-				// if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"]== $_POST["ingPassword"]){
-
-                     if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
+				if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
 
 					if($respuesta["estado"] == 1){
 
@@ -33,10 +30,7 @@ class ControladorUsuarios{
 						$_SESSION["foto"] = $respuesta["foto"];
 						$_SESSION["perfil"] = $respuesta["perfil"];
 
-
-
-//------------------------------------- registro de la ultima fecha de la entrada---------------------------------------------------
-
+						// registro de fecha de ultimo ingreso
 						date_default_timezone_set('America/Bogota');
 
 						$fecha = date('Y-m-d');
@@ -81,7 +75,7 @@ class ControladorUsuarios{
 
 	}
 
-//---------------------------------------------------------- registramos usuario---------------------------------------------------------------------------
+// registro de usuario
 
 	static public function ctrCrearUsuario(){
 
@@ -91,7 +85,7 @@ class ControladorUsuarios{
 			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoUsuario"]) &&
 			   preg_match('/^[a-zA-Z0-9]+$/', $_POST["nuevoPassword"])){
 
-		// validar imagen
+			// validar img
 
 				$ruta = "";
 
@@ -102,16 +96,17 @@ class ControladorUsuarios{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
-					// foto guardar
+					// creamos eldirectorio delasimg
 
 					$directorio = "vistas/img/usuarios/".$_POST["nuevoUsuario"];
 
 					mkdir($directorio, 0755);
 
-				// funciones
+					// funcion php por defectp
 
 					if($_FILES["nuevaFoto"]["type"] == "image/jpeg"){
 
+					// guardamosla imagen en el directorio
 
 						$aleatorio = mt_rand(100,999);
 
@@ -129,7 +124,10 @@ class ControladorUsuarios{
 
 					if($_FILES["nuevaFoto"]["type"] == "image/png"){
 
-						
+						/*=============================================
+						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
+						=============================================*/
+
 						$aleatorio = mt_rand(100,999);
 
 						$ruta = "vistas/img/usuarios/".$_POST["nuevoUsuario"]."/".$aleatorio.".png";
@@ -148,11 +146,10 @@ class ControladorUsuarios{
 
 				$tabla = "usuarios";
 
-				 $encriptar = crypt($_POST["nuevoPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
+				$encriptar = crypt($_POST["nuevoPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
 				$datos = array("nombre" => $_POST["nuevoNombre"],
-                               "usuario" => $_POST["nuevoUsuario"],
-                            //    "password" => $_POST["nuevoPassword"],
+					           "usuario" => $_POST["nuevoUsuario"],
 					           "password" => $encriptar,
 					           "perfil" => $_POST["nuevoPerfil"],
 					           "foto"=>$ruta);
@@ -219,7 +216,9 @@ class ControladorUsuarios{
 
 	}
 
-	// ---------------------------------------------------------mostrando-----------------------------------------------------------------
+	/*=============================================
+	MOSTRAR USUARIO
+	=============================================*/
 
 	static public function ctrMostrarUsuarios($item, $valor){
 
@@ -230,7 +229,9 @@ class ControladorUsuarios{
 		return $respuesta;
 	}
 
-	//--------------------------------------------------------- editando---------------------------------------------------------------------------
+	/*=============================================
+	EDITAR USUARIO
+	=============================================*/
 
 	static public function ctrEditarUsuario(){
 
@@ -238,8 +239,9 @@ class ControladorUsuarios{
 
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarNombre"])){
 
-				//VALIDAR IMAGEN
-				
+				/*=============================================
+				VALIDAR IMAGEN
+				=============================================*/
 
 				$ruta = $_POST["fotoActual"];
 
@@ -250,13 +252,15 @@ class ControladorUsuarios{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
-					//CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO
-					
+					/*=============================================
+					CREAMOS EL DIRECTORIO DONDE VAMOS A GUARDAR LA FOTO DEL USUARIO
+					=============================================*/
 
 					$directorio = "vistas/img/usuarios/".$_POST["editarUsuario"];
 
-					//PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD
-					
+					/*=============================================
+					PRIMERO PREGUNTAMOS SI EXISTE OTRA IMAGEN EN LA BD
+					=============================================*/
 
 					if(!empty($_POST["fotoActual"])){
 
@@ -268,11 +272,15 @@ class ControladorUsuarios{
 
 					}	
 
-					// guardamos img de acuerdo jpg o png
+					/*=============================================
+					DE ACUERDO AL TIPO DE IMAGEN APLICAMOS LAS FUNCIONES POR DEFECTO DE PHP
+					=============================================*/
 
 					if($_FILES["editarFoto"]["type"] == "image/jpeg"){
 
-						//
+						/*=============================================
+						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
+						=============================================*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -290,7 +298,9 @@ class ControladorUsuarios{
 
 					if($_FILES["editarFoto"]["type"] == "image/png"){
 
-						// guadando imagen en directorio
+						/*=============================================
+						GUARDAMOS LA IMAGEN EN EL DIRECTORIO
+						=============================================*/
 
 						$aleatorio = mt_rand(100,999);
 
@@ -325,7 +335,7 @@ class ControladorUsuarios{
 									  title: "¡La contraseña no puede ir vacía o llevar caracteres especiales!",
 									  showConfirmButton: true,
 									  confirmButtonText: "Cerrar"
-									  }).then(function(result){
+									  }).then(function(result) {
 										if (result.value) {
 
 										window.location = "usuarios";
@@ -334,6 +344,8 @@ class ControladorUsuarios{
 									})
 
 						  	</script>';
+
+						  	return;
 
 					}
 
@@ -360,7 +372,7 @@ class ControladorUsuarios{
 						  title: "El usuario ha sido editado correctamente",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 									if (result.value) {
 
 									window.location = "usuarios";
@@ -382,7 +394,7 @@ class ControladorUsuarios{
 						  title: "¡El nombre no puede ir vacío o llevar caracteres especiales!",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
-						  }).then(function(result){
+						  }).then(function(result) {
 							if (result.value) {
 
 							window.location = "usuarios";
@@ -398,9 +410,9 @@ class ControladorUsuarios{
 
 	}
 
-
-
-	// ------------------------------------borrar usuario--------------------------------------------------------------------------
+	/*=============================================
+	BORRAR USUARIO
+	=============================================*/
 
 	static public function ctrBorrarUsuario(){
 
@@ -426,8 +438,9 @@ class ControladorUsuarios{
 					  type: "success",
 					  title: "El usuario ha sido borrado correctamente",
 					  showConfirmButton: true,
-					  confirmButtonText: "Cerrar"
-					  }).then(function(result){
+					  confirmButtonText: "Cerrar",
+					  closeOnConfirm: false
+					  }).then(function(result) {
 								if (result.value) {
 
 								window.location = "usuarios";
