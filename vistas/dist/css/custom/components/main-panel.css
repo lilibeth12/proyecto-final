@@ -1,6 +1,6 @@
 .main-panel {
     overflow-x: auto;
     background-color: white;
-    grid-column-start: 2;
+    /* grid-column-start: 2; */
     padding: 20px 15px;
 }

@@ -1,20 +1,19 @@
+
 <div class="main-panel">
-    <style>
-        td>img {
-
-            height: 40px;
+<style>
+  td>img{
+        
+        height:40px;
+    }
+    .name_prod{
+        background:  #4957B8;
+        color:white;
+    }
+    .lineb{
+          border-bottom: 5px #39478E solid;
+          margin-bottom: 40px;
         }
-
-        .name_prod {
-            background: #4957B8;
-            color: white;
-        }
-
-        .lineb {
-            border-bottom: 5px #39478E solid;
-            margin-bottom: 40px;
-        }
-    </style>
+</style>
 
     <section class="content-header lineb">
 
@@ -82,33 +81,34 @@
                     foreach ($productos as $key => $value) {
 
                         echo '<tr class="imgp" >
-                                <td>' . ($key + 1) . '</td>
-                                <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail " ></td>
-                                <td>' . $value["codigo"] . '</td>
-                                <td>' . $value["descripcion"] . '</td>';
+          <td>' . ($key + 1) . '</td>
+          <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail " ></td>
+          <td>' . $value["codigo"] . '</td>
+          <td>' . $value["descripcion"] . '</td>';
 
-                                                $item = "id";
-                                                $valor = $value["id_categoria"];
+                        $item = "id";
+                        $valor = $value["id_categoria"];
 
-                                                $categoria = ControladorCategorias::ctrMostrarCategorias($item, $valor);
+                        $categoria = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
-                                                echo '<td>' . $categoria["categoria"] . '</td>
-                                <td>' . $value["stock"] . '</td>
-                                <td>' . $value["precio_compra"] . '</td>
-                                <td>' . $value["precio_venta"] . '</td>
-                                <td>' . $value["fecha"] . '</td>
-                                <td>
+                        echo '<td>' . $categoria["categoria"] . '</td>
+          <td>' . $value["stock"] . '</td>
+          <td>' . $value["precio_compra"] . '</td>
+          <td>' . $value["precio_venta"] . '</td>
+          <td>' . $value["fecha"] . '</td>
+          <td>
 
-                                    <div class="btn-group">
-                                        
-                                        <button class="btn btn-warning"><i class="fa fa-pen"></i></button>
+            <div class="btn-group">
+                
+              <button class="btn btn-warning"><i class="fa fa-pen"></i></button>
 
-                                        <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+              <button class="btn btn-danger"><i class="fa fa-times"></i></button>
 
-                                    </div>  
+            </div>  
 
-                                </td>
-                            </tr>';
+          </td>
+
+        </tr>';
                     }
 
                     ?>
